@@ -6,7 +6,7 @@ jobs:
   build:
     strategy:
       matrix:
-        pyversion: ['3.5','3.8']
+        pyversion: ['3.10.7','3.8']
 
     runs-on: ubuntu-latest
 
@@ -25,7 +25,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python ${{matrix.pyversion}}
-      uses: actions/setup-python@v1
+      uses: actions/setup-python@v1 
       with:
         python-version: ${{matrix.pyversion}}
     - name: psycopg2 prerequisites
