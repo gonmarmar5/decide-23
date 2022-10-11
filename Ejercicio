@@ -1,0 +1,5 @@
+
+ELIMINAR DEMAS RAMAS Y DEJAR MASTER
+
+git branch -a | grep "origin" | grep- v "master" | cut -d/ -f3 | 
+xargs git push -d origin 
