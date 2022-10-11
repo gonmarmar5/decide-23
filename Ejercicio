@@ -7,3 +7,19 @@ xargs git push -d origin
 VER LAS RAMAS 
 
 git log --graph --oneline --all
+
+EJERICICIO 2.- 
+
+EJERCICIO 3.-CHERRY PICK - sirve para hacer un merge de un commit 
+
+EJERCICIO 4.- 
+
+git reset tiene 3 modos hard/mixed/soft
+REVERT para remoto
+
+EJERCICIO 5.-
+
+https://1984.lsi.us.es/wiki-egc/index.php/GithubActions_2022
+
+
+

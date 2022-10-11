@@ -1,4 +1,4 @@
-from django.test import TestCase
+''' from django.test import TestCase
 from django.conf import settings
 from rest_framework.test import APIClient
 from rest_framework.test import APITestCase
@@ -103,7 +103,7 @@ class MixnetCase(APITestCase):
         self.assertEqual(sorted(clear), sorted(clear2))
 
     def test_multiple_auths(self):
-        '''
+        
         This test emulates a two authorities shuffle and decryption.
 
         We create two votings, one with id 1 and another one with id 2, to
@@ -116,7 +116,6 @@ class MixnetCase(APITestCase):
 
         Then we decrypt with the first voting/auth and decrypt the result
         with the second voting/auth.
-        '''
 
         data = { "voting": 1, "auths": [ { "name": "auth1", "url": "http://localhost:8000" } ] }
         response = self.client.post('/mixnet/', data, format='json')
@@ -159,9 +158,8 @@ class MixnetCase(APITestCase):
         self.assertEqual(sorted(clear), sorted(clear2))
 
     def test_multiple_auths_mock(self):
-        '''
         This test emulates a two authorities shuffle and decryption.
-        '''
+        
 
         data = {
             "voting": 1,
